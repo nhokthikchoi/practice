@@ -1,0 +1,54 @@
+body {
+	background: lightpink;
+}
+
+.btn {
+	background: #dd4b39;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+
+}
+
+.btn:hover {
+	text-decoration: none;
+	background: #d14836;
+
+}
+
+.btn:focus {
+	border: 2px solid white;
+}
+
+
+
+
+
+
+			/*** set the width and height to match your images **/
+
+#slideshow {
+	position:relative;
+	height:350px;
+}
+
+#slideshow IMG {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	opacity:0.0;
+}
+
+#slideshow IMG.active {
+	z-index:10;
+	opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+	z-index:9;
+}
+.control span{ width: 15px; height: 15px; display: inline-block; background: #000; border-radius: 15px;}
+.control{ display: block; width: 540px;    text-align: center;}
